@@ -1,0 +1,12 @@
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\bin\Debug\AccountantsForm.exe.config
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\bin\Debug\AccountantsForm.exe
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\bin\Debug\AccountantsForm.pdb
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.csprojAssemblyReference.cache
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.AccLoginfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.Properties.Resources.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.csproj.GenerateResource.cache
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.exe
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.pdb
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.GoodsRecievedfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.Mainfrm.resources

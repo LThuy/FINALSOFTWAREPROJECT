@@ -33,9 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -59,6 +65,18 @@
     <Compile Include="GoodsRecievedfrm.Designer.cs">
       <DependentUpon>GoodsRecievedfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GoodsRecievedNote.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GoodsRecievedNote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="goodsrecievedReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="goodsrecievedReport.Designer.cs">
+      <DependentUpon>goodsrecievedReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Mainfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +90,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GoodsRecievedfrm.resx">
       <DependentUpon>GoodsRecievedfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsRecievedNote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>GoodsRecievedNote.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="goodsrecievedReport.resx">
+      <DependentUpon>goodsrecievedReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainfrm.resx">
       <DependentUpon>Mainfrm.cs</DependentUpon>
@@ -101,6 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loginBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainfrmBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

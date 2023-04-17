@@ -30,13 +30,13 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bestsellingProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goodsInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goodsReceivedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goodsDeliveryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incomingoutgoingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.incomingoutgoingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.bestsellingProductsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.revenueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportMonthlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -63,6 +63,12 @@
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.productsToolStripMenuItem.Text = "Products";
             // 
+            // bestsellingProductsToolStripMenuItem
+            // 
+            this.bestsellingProductsToolStripMenuItem.Name = "bestsellingProductsToolStripMenuItem";
+            this.bestsellingProductsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.bestsellingProductsToolStripMenuItem.Text = "Best-selling";
+            // 
             // goodsInformationToolStripMenuItem
             // 
             this.goodsInformationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -75,14 +81,15 @@
             // goodsReceivedToolStripMenuItem
             // 
             this.goodsReceivedToolStripMenuItem.Name = "goodsReceivedToolStripMenuItem";
-            this.goodsReceivedToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.goodsReceivedToolStripMenuItem.Text = "Goods Received";
+            this.goodsReceivedToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.goodsReceivedToolStripMenuItem.Text = "Goods Received Note";
+            this.goodsReceivedToolStripMenuItem.Click += new System.EventHandler(this.goodsReceivedToolStripMenuItem_Click);
             // 
             // goodsDeliveryToolStripMenuItem
             // 
             this.goodsDeliveryToolStripMenuItem.Name = "goodsDeliveryToolStripMenuItem";
-            this.goodsDeliveryToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.goodsDeliveryToolStripMenuItem.Text = "Goods Delivery ";
+            this.goodsDeliveryToolStripMenuItem.Size = new System.Drawing.Size(187, 22);
+            this.goodsDeliveryToolStripMenuItem.Text = "Goods Delivery Note";
             // 
             // stockReportToolStripMenuItem
             // 
@@ -96,20 +103,14 @@
             // incomingoutgoingToolStripMenuItem
             // 
             this.incomingoutgoingToolStripMenuItem.Name = "incomingoutgoingToolStripMenuItem";
-            this.incomingoutgoingToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.incomingoutgoingToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.incomingoutgoingToolStripMenuItem.Text = "Incoming";
             // 
             // incomingoutgoingToolStripMenuItem1
             // 
             this.incomingoutgoingToolStripMenuItem1.Name = "incomingoutgoingToolStripMenuItem1";
-            this.incomingoutgoingToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.incomingoutgoingToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.incomingoutgoingToolStripMenuItem1.Text = "Outgoing";
-            // 
-            // bestsellingProductsToolStripMenuItem
-            // 
-            this.bestsellingProductsToolStripMenuItem.Name = "bestsellingProductsToolStripMenuItem";
-            this.bestsellingProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bestsellingProductsToolStripMenuItem.Text = "Best-selling";
             // 
             // revenueToolStripMenuItem
             // 
@@ -122,13 +123,15 @@
             // reportMonthlyToolStripMenuItem
             // 
             this.reportMonthlyToolStripMenuItem.Name = "reportMonthlyToolStripMenuItem";
-            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.reportMonthlyToolStripMenuItem.Text = "Report monthly";
             // 
             // Mainfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::AccountantsForm.Properties.Resources.mainfrmBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;

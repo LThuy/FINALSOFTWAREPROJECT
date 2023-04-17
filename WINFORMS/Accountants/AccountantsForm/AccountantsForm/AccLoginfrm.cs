@@ -38,5 +38,11 @@ namespace AccountantsForm
                 MessageBox.Show("Invalid username or password", "Alert", MessageBoxButtons.OK);
             }
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUsername.Text = "";
+            txtPassword.Text = "";
+        }
     }
 }

@@ -21,5 +21,14 @@ namespace AccountantsForm
         {
 
         }
+
+        private void goodsReceivedToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            GoodsRecievedfrm f = new GoodsRecievedfrm();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }

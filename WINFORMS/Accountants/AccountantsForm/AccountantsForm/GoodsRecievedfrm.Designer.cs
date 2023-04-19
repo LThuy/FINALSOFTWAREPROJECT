@@ -58,6 +58,8 @@
             this.txtDate = new System.Windows.Forms.TextBox();
             this.BtnUpdate = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtDocument = new System.Windows.Forms.TextBox();
             this.BtnNewNote = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -147,11 +149,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Blue;
-            this.label6.Location = new System.Drawing.Point(17, 127);
+            this.label6.Location = new System.Drawing.Point(17, 174);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 16);
+            this.label6.Size = new System.Drawing.Size(116, 16);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Quantity:";
+            this.label6.Text = "Quantity (actually):";
             // 
             // label7
             // 
@@ -169,7 +171,7 @@
             // 
             this.txtQuantity.BackColor = System.Drawing.Color.Bisque;
             this.txtQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQuantity.Location = new System.Drawing.Point(154, 127);
+            this.txtQuantity.Location = new System.Drawing.Point(154, 174);
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(100, 22);
             this.txtQuantity.TabIndex = 1;
@@ -189,7 +191,7 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(17, 175);
+            this.label8.Location = new System.Drawing.Point(276, 32);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 16);
             this.label8.TabIndex = 0;
@@ -199,7 +201,7 @@
             // 
             this.txtUnitPrice.BackColor = System.Drawing.Color.Bisque;
             this.txtUnitPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUnitPrice.Location = new System.Drawing.Point(154, 175);
+            this.txtUnitPrice.Location = new System.Drawing.Point(382, 32);
             this.txtUnitPrice.Name = "txtUnitPrice";
             this.txtUnitPrice.Size = new System.Drawing.Size(100, 22);
             this.txtUnitPrice.TabIndex = 1;
@@ -263,7 +265,7 @@
             this.BtnOK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.BtnOK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnOK.ForeColor = System.Drawing.SystemColors.Info;
-            this.BtnOK.Location = new System.Drawing.Point(304, 51);
+            this.BtnOK.Location = new System.Drawing.Point(307, 145);
             this.BtnOK.Name = "BtnOK";
             this.BtnOK.Size = new System.Drawing.Size(75, 23);
             this.BtnOK.TabIndex = 3;
@@ -276,7 +278,7 @@
             this.BtnClear.BackColor = System.Drawing.Color.Chocolate;
             this.BtnClear.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnClear.ForeColor = System.Drawing.SystemColors.Menu;
-            this.BtnClear.Location = new System.Drawing.Point(398, 51);
+            this.BtnClear.Location = new System.Drawing.Point(401, 145);
             this.BtnClear.Name = "BtnClear";
             this.BtnClear.Size = new System.Drawing.Size(75, 23);
             this.BtnClear.TabIndex = 3;
@@ -315,7 +317,7 @@
             this.BtnDelete.BackColor = System.Drawing.Color.Red;
             this.BtnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnDelete.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.BtnDelete.Location = new System.Drawing.Point(398, 178);
+            this.BtnDelete.Location = new System.Drawing.Point(401, 178);
             this.BtnDelete.Name = "BtnDelete";
             this.BtnDelete.Size = new System.Drawing.Size(75, 23);
             this.BtnDelete.TabIndex = 3;
@@ -338,7 +340,7 @@
             this.BtnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.BtnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.BtnUpdate.ForeColor = System.Drawing.SystemColors.Info;
-            this.BtnUpdate.Location = new System.Drawing.Point(304, 80);
+            this.BtnUpdate.Location = new System.Drawing.Point(307, 174);
             this.BtnUpdate.Name = "BtnUpdate";
             this.BtnUpdate.Size = new System.Drawing.Size(75, 27);
             this.BtnUpdate.TabIndex = 3;
@@ -349,11 +351,13 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.txtTrademark);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.BtnDelete);
+            this.groupBox1.Controls.Add(this.txtDocument);
             this.groupBox1.Controls.Add(this.txtQuantity);
             this.groupBox1.Controls.Add(this.BtnUpdate);
             this.groupBox1.Controls.Add(this.BtnClear);
@@ -368,6 +372,27 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Product:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(17, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 16);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "Quantity (document):";
+            // 
+            // txtDocument
+            // 
+            this.txtDocument.BackColor = System.Drawing.Color.Bisque;
+            this.txtDocument.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDocument.Location = new System.Drawing.Point(154, 127);
+            this.txtDocument.Name = "txtDocument";
+            this.txtDocument.Size = new System.Drawing.Size(100, 22);
+            this.txtDocument.TabIndex = 1;
             // 
             // BtnNewNote
             // 
@@ -444,5 +469,7 @@
         private System.Windows.Forms.Button BtnUpdate;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button BtnNewNote;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtDocument;
     }
 }

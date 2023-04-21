@@ -37,12 +37,54 @@ namespace AccountantsForm
                 txtTrademark.Focus();
             } else
             {
-                dataGridView1.Rows.Add(dataGridView1.RowCount, txtTrademark.Text, "VND", txtCode.Text, txtQuantity.Text, Convert.ToInt32(txtUnitPrice.Text).ToString("N0"),
-               (Convert.ToInt32(txtQuantity.Text) * Convert.ToInt32(txtUnitPrice.Text)).ToString("N0"));
+                if(validateProductInformation())
+                {
+                    dataGridView1.Rows.Add(dataGridView1.RowCount, txtTrademark.Text, "VND", txtCode.Text, txtQuantity.Text, Convert.ToInt32(txtUnitPrice.Text).ToString("N0"),
+                    (Convert.ToInt32(txtQuantity.Text) * Convert.ToInt32(txtUnitPrice.Text)).ToString("N0"));
+                    list.Add(txtDocument.Text);
+                }           
+            }          
+        }
 
-                list.Add(txtDocument.Text);
+        public  bool validateProductInformation()
+        {
+            if(dataGridView1.Rows.Count > 0)
+            {
+                foreach (DataGridViewRow dgv in dataGridView1.Rows)
+                {
+                    if (dgv.Cells[3].Value != null)
+                    {
+                        if (txtCode.Text == dgv.Cells[3].Value.ToString())
+                        {
+                            MessageBox.Show("Code product is available", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            return false;
+                        }
+                    }
+                }                    
             }
-           
+            double number1;
+            double number2;
+            double number3;
+            bool isNumber1 = double.TryParse(txtDocument.Text, out number1);
+            bool isNumber2 = double.TryParse(txtQuantity.Text, out number2);
+            bool isNumber3 = double.TryParse(txtUnitPrice.Text, out number3);
+            if (!(isNumber1 && isNumber2 && isNumber3))
+            {
+                MessageBox.Show("Please enter numbers", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if ((number1 < 0 || number1 == 0) || (number2 < 0 || number2 == 0) || (number3 < 0 || number3 == 0))
+            {
+                MessageBox.Show("Number must be higher than 0", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            if (number2 > number1)
+            {
+                MessageBox.Show("Quantity actually should be lower than " + number1.ToString(), "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return false;
+            }
+            
+            return true;
         }
 
         private void BtnDelete_Click(object sender, EventArgs e)

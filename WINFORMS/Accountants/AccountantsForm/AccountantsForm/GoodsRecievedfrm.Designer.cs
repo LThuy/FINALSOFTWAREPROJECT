@@ -413,6 +413,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 581);
+            this.ControlBox = false;
             this.Controls.Add(this.BtnNewNote);
             this.Controls.Add(this.txtDate);
             this.Controls.Add(this.BtnCancel);

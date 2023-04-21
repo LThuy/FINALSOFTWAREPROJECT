@@ -29,3 +29,4 @@ C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsF
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\bin\Debug\stdole.dll
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.goodsrecievedReport.resources
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.csproj.CopyComplete
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.GoodsExportfrm.resources

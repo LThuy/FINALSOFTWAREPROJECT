@@ -1,0 +1,23 @@
+﻿
+body {
+    background-image: url("images/HomepageBG.jpg");
+    background-size: cover;
+}
+
+.container {
+    opacity: 0.9;
+}
+
+.new-products {
+    border-radius: 8px;
+}
+
+.our-products {
+    border-radius: 8px;
+}
+
+.our-products h1 {
+    color: #ff6a00;
+}
+
+

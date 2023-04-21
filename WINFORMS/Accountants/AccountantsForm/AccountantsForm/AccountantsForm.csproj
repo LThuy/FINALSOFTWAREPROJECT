@@ -59,6 +59,12 @@
     <Compile Include="AccLoginfrm.Designer.cs">
       <DependentUpon>AccLoginfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GoodsExportfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GoodsExportfrm.Designer.cs">
+      <DependentUpon>GoodsExportfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoodsRecievedfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AccLoginfrm.resx">
       <DependentUpon>AccLoginfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GoodsExportfrm.resx">
+      <DependentUpon>GoodsExportfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GoodsRecievedfrm.resx">
       <DependentUpon>GoodsRecievedfrm.cs</DependentUpon>

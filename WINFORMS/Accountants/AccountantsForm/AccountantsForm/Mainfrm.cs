@@ -30,5 +30,13 @@ namespace AccountantsForm
             f.ShowDialog();
             this.Close();
         }
+
+        private void goodsDeliveryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GoodsExportfrm f = new GoodsExportfrm();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }

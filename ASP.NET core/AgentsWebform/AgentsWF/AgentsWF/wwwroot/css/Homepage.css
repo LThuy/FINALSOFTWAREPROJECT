@@ -1,15 +1,14 @@
 ﻿
 body {
-    background-image: url("images/HomepageBG.jpg");
-    background-size: cover;
+    background: linear-gradient(90deg,rgb(83, 51, 191), rgb(53, 216, 246));
+    margin-top: 80px;
 }
 
-.container {
-    opacity: 0.9;
-}
+
 
 .new-products {
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .our-products {
@@ -18,6 +17,12 @@ body {
 
 .our-products h1 {
     color: #ff6a00;
+}
+
+.space {
+    width: 100%;
+    height: 50px;
+
 }
 
 

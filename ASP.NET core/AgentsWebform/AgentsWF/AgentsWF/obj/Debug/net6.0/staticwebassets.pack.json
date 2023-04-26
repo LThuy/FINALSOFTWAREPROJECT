@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\css\\Layout.css"
     },
     {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\121447151_padded_logo.png",
+      "PackagePath": "staticwebassets\\css\\brand\\121447151_padded_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\Color logo - no background.png",
+      "PackagePath": "staticwebassets\\css\\brand\\Color logo - no background.png"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\White logo - no background.png",
+      "PackagePath": "staticwebassets\\css\\brand\\White logo - no background.png"
+    },
+    {
       "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\1.jpeg",
       "PackagePath": "staticwebassets\\css\\images\\1.jpeg"
     },
@@ -35,6 +47,54 @@
     {
       "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\iphone-14-pro-vang-thumb-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\iphone-14-pro-vang-thumb-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\600_600_Untitled_1.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\600_600_Untitled_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\Motorola-Moto-G-Power-2021.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\Motorola-Moto-G-Power-2021.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\asus-rog-phone-5g-thumb-600x600-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\asus-rog-phone-5g-thumb-600x600-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\google-pixel-5-600jpg-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\google-pixel-5-600jpg-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\nokia-83-600x600-2-200x200.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\nokia-83-600x600-2-200x200.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\oneplus-9-pro-600x600-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\oneplus-9-pro-600x600-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\realme-gt-5g-600x600-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\realme-gt-5g-600x600-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\samsung-galaxy-s21-tim-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\samsung-galaxy-s21-tim-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\sony-xperia-1-iii-1-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\sony-xperia-1-iii-1-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\xiaomi-mi-11-ultra-600x600-2-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\xiaomi-mi-11-ultra-600x600-2-600x600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\zte-axon-30-ultra-600x600.jpg",
+      "PackagePath": "staticwebassets\\css\\images\\products\\zte-axon-30-ultra-600x600.jpg"
     },
     {
       "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\s22-ultra.jpg",

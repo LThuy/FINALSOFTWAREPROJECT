@@ -1,20 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.Extensions.Configuration;
+using AgentsWF.Models;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace AgentsWF.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        readonly IConfiguration _configuration;
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public List<Phone> phones = new List<Phone>();
+
+        public string connectionString;
+
+        public IndexModel(IConfiguration configuration)
         {
-            _logger = logger;
+            _configuration = configuration;
         }
 
         public void OnGet()
         {
+            phones = GetPhoneList();
+        }
 
+        private List<Phone> GetPhoneList()
+        {
+            connectionString = _configuration.GetConnectionString("ConnectionString");
+
+            List<Phone> phoneList = new List<Phone>();
+
+            Phone phone = new Phone();
+
+            phoneList = phone.GetPhones(connectionString);
+
+            return phoneList;
         }
     }
 }

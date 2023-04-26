@@ -75,184 +75,36 @@ GO
 
 -- Create the Products table
 CREATE TABLE Products (
-    ProductID INT PRIMARY KEY,
-    ProductName VARCHAR(50) NOT NULL,
-    ProductDescription VARCHAR(200),
-    ProductPrice DECIMAL(10,2) NOT NULL,
-    ProductQuantity INT NOT NULL
+  id INT PRIMARY KEY IDENTITY(1,1),
+  phone_name VARCHAR(100),
+  price DECIMAL(10,2),
+  memory INT,
+  camera INT,
+  pin INT,
+  image VARCHAR(255)
 );
 
 GO
 
 -- Insert sample data into the Products table
-INSERT INTO Products (ProductID, ProductName, ProductDescription, ProductPrice, ProductQuantity) VALUES
-    (1, 'iPhone 13 Pro Max', 'Apple iPhone 13 Pro Max, 256GB', 1299.99, 50),
-    (2, 'Samsung Galaxy S21 Ultra', 'Samsung Galaxy S21 Ultra, 512GB', 1299.99, 40),
-    (3, 'Google Pixel 6 Pro', 'Google Pixel 6 Pro, 128GB', 899.99, 30),
-    (4, 'OnePlus 10 Pro', 'OnePlus 10 Pro, 256GB', 999.99, 20),
-    (5, 'Xiaomi Mi 12', 'Xiaomi Mi 12, 128GB', 799.99, 60),
-    (6, 'Sony Xperia 1 III', 'Sony Xperia 1 III, 256GB', 1299.99, 35),
-    (7, 'Huawei P50 Pro', 'Huawei P50 Pro, 256GB', 1199.99, 25),
-    (8, 'LG Wing 5G', 'LG Wing 5G, 256GB', 899.99, 15),
-    (9, 'Motorola Edge 20 Pro', 'Motorola Edge 20 Pro, 128GB', 699.99, 50),
-    (10, 'Nokia X50 Pro', 'Nokia X50 Pro, 256GB', 899.99, 30),
-    (11, 'Asus Zenfone 8 Flip', 'Asus Zenfone 8 Flip, 128GB', 799.99, 20),
-    (12, 'Realme GT Master', 'Realme GT Master, 256GB', 599.99, 50),
-    (13, 'Oppo Find X3 Pro', 'Oppo Find X3 Pro, 256GB', 1199.99, 30),
-    (14, 'Vivo X70 Pro+', 'Vivo X70 Pro+, 256GB', 999.99, 40),
-    (15, 'Lenovo Legion Phone Duel 2', 'Lenovo Legion Phone Duel 2, 512GB', 1099.99, 20),
-    (16, 'Redmi Note 11 Pro', 'Redmi Note 11 Pro, 128GB', 399.99, 80),
-    (17, 'ZTE Axon 30 Ultra', 'ZTE Axon 30 Ultra, 256GB', 999.99, 25),
-    (18, 'TCL 20 Pro 5G', 'TCL 20 Pro 5G, 256GB', 599.99, 35),
-    (19, 'Blackberry Key3', 'Blackberry Key3, 128GB', 899.99, 15),
-    (20, 'CAT S62 Pro', 'CAT S62 Pro, 128GB', 699.99, 10);
-
+INSERT INTO Products (phone_name, price, memory, camera, pin, image)
+VALUES
+('Samsung Galaxy S21', 799.99, 128, 64, 4000, '/css/images/products/samsung-galaxy-s21-tim-600x600.jpg'),
+('Apple iPhone 12 Pro', 999.99, 256, 12, 2815, '/css/images/products/(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg'),
+('OnePlus 9 Pro', 1069.00, 256, 48, 4500, '/css/images/products/oneplus-9-pro-600x600-1-600x600.jpg'),
+('Google Pixel 5', 699.00, 128, 12, 4080, '/css/images/products/google-pixel-5-600jpg-600x600.jpg'),
+('Xiaomi Mi 11 Ultra', 1199.99, 512, 50, 5000, '/css/images/products/xiaomi-mi-11-ultra-600x600-2-600x600.jpg'),
+('Sony Xperia 1 III', 1299.99, 256, 12, 4500, '/css/images/products/sony-xperia-1-iii-1-600x600.jpg'),
+('LG Velvet 5G', 599.99, 128, 48, 4300, '/css/images/products/600_600_Untitled_1.jpg'),
+('Motorola Moto G Power', 199.99, 64, 48, 5000, '/css/images/products/Motorola-Moto-G-Power-2021.jpg'),
+('Asus ROG Phone 5', 999.99, 256, 64, 6000, '/css/images/products/asus-rog-phone-5g-thumb-600x600-600x600.jpg'),
+('Nokia 8.3 5G', 699.00, 128, 64, 4500, '/css/images/products/nokia-83-600x600-2-200x200.jpg'),
+('Realme GT 5G', 499.00, 128, 64, 4500, '/css/images/products/realme-gt-5g-600x600-1-600x600.jpg'),
+('ZTE Axon 30 Ultra', 749.00, 256, 64, 4600, '/css/images/products/zte-axon-30-ultra-600x600.jpg');
 
 GO
 
-CREATE TABLE GoodsReceivedNote (
-GRN_ID INT PRIMARY KEY,
-ReceiptDate DATE,
-ItemCount INT,
-TotalAmount DECIMAL(10, 2)
-);
+DELETE FROM Products;
 
-GO
+SELECT * FROM Products
 
-CREATE TABLE GoodsReceivedNoteItems (
-GRN_ID INT,
-ProductID INT,
-Quantity INT,
-FOREIGN KEY (GRN_ID) REFERENCES GoodsReceivedNote(GRN_ID),
-FOREIGN KEY (ProductID) REFERENCES Products(ProductID)
-);
-
-GO
-
-
-INSERT INTO GoodsReceivedNote (GRN_ID, ReceiptDate, ItemCount, TotalAmount) VALUES
-(1, '2023-04-01', 5, 6499.95),
-(2, '2023-04-07', 10, 11999.90),
-(3, '2023-04-14', 15, 18249.85);
-
-GO
-
-INSERT INTO GoodsReceivedNoteItems (GRN_ID, ProductID, Quantity) VALUES
-(1, 1, 2),
-(1, 2, 1),
-(1, 3, 1),
-(1, 6, 1),
-(1, 7, 1),
-(2, 1, 5),
-(2, 4, 2),
-(2, 8, 2),
-(2, 11, 1),
-(2, 12, 2),
-(3, 1, 3),
-(3, 2, 4),
-(3, 3, 2),
-(3, 4, 1),
-(3, 5, 1),
-(3, 6, 1),
-(3, 7, 1),
-(3, 10, 1),
-(3, 13, 1),
-(3, 14, 1);
-
-GO
-
-
--- Create the Orders table
-CREATE TABLE Orders (
-    OrderID INT PRIMARY KEY,
-    AgentID INT NOT NULL,
-    OrderDate DATETIME NOT NULL,
-    TotalAmount DECIMAL(10,2) NOT NULL,
-    PaymentMethod VARCHAR(50) NOT NULL,
-    PaymentStatus VARCHAR(50) NOT NULL
-);
-
-GO
-
--- Insert sample data into the Orders table
-INSERT INTO Orders (OrderID, AgentID, OrderDate, TotalAmount, PaymentMethod, PaymentStatus) VALUES
-(1, 1, '2023-04-14 10:00:00', 799.99, 'Cash', 'Paid'),
-(2, 2, '2023-04-15 12:00:00', 999.99, 'Bank Transfer', 'Pending'),
-(3, 3, '2023-04-15 14:00:00', 1399.98, 'Momo', 'Paid');
-
-GO
-
--- Create the OrderItems table
-CREATE TABLE OrderItems (
-    OrderID INT NOT NULL,
-    ProductID INT NOT NULL,
-    Quantity INT NOT NULL,
-    PRIMARY KEY (OrderID, ProductID),
-    FOREIGN KEY (OrderID) REFERENCES Orders (OrderID),
-    FOREIGN KEY (ProductID) REFERENCES Products (ProductID)
-);
-
-GO
-
--- Insert sample data into the OrderItems table
-INSERT INTO OrderItems (OrderID, ProductID, Quantity) VALUES
-(1, 1, 2),
-(1, 3, 1),
-(2, 2, 1),
-(3, 1, 1),
-(3, 2, 1),
-(3, 3, 1);
-
-GO
-
--- View incoming stock report
-CREATE PROCEDURE GetIncomingStock
-AS
-BEGIN
-    SELECT p.ProductName, SUM(o.Quantity) as IncomingStock
-    FROM OrderItems o
-    INNER JOIN Products p ON o.ProductID = p.ProductID
-    WHERE o.OrderID IN (
-        SELECT OrderID
-        FROM Orders
-        WHERE PaymentStatus = 'Paid'
-    )
-    GROUP BY p.ProductName
-    ORDER BY IncomingStock DESC;
-END;
-GO
-
--- View outgoing stock report
-SELECT p.ProductName, SUM(o.Quantity) as OutgoingStock
-FROM OrderItems o
-INNER JOIN Products p ON o.ProductID = p.ProductID
-WHERE o.OrderID IN (
-SELECT OrderID
-FROM Orders
-WHERE PaymentStatus = 'Paid'
-)
-GROUP BY p.ProductName
-ORDER BY OutgoingStock DESC;
-
-GO
-
--- View best-selling products report
-SELECT p.ProductName, SUM(o.Quantity) as TotalSales
-FROM OrderItems o
-INNER JOIN Products p ON o.ProductID = p.ProductID
-WHERE o.OrderID IN (
-SELECT OrderID
-FROM Orders
-WHERE PaymentStatus = 'Paid'
-)
-GROUP BY p.ProductName
-ORDER BY TotalSales DESC;
-
-GO
-
--- View revenue report
-SELECT DATEPART(MONTH, o.OrderDate) as Month, SUM(o.TotalAmount) as Revenue
-FROM Orders o
-WHERE o.PaymentStatus = 'Paid'
-GROUP BY DATEPART(MONTH, o.OrderDate)
-ORDER BY Month;

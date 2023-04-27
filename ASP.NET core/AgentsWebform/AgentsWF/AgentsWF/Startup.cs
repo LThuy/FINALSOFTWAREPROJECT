@@ -25,6 +25,12 @@ namespace AgentsWF
         {
             services.AddRazorPages();
             services.AddSingleton<IConfiguration>(Configuration);
+            services.AddMvc()
+            .AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                options.JsonSerializerOptions.DictionaryKeyPolicy = null;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +58,8 @@ namespace AgentsWF
             {
                 endpoints.MapRazorPages();
             });
+
+
         }
     }
 }

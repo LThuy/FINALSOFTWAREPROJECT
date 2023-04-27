@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AgentsWF.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/Layout.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -31,11 +32,12 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
-                            </li>
+                            </li>                         
                         </ul>
                     </div>
+                    <div id="UsernameTag" style="color: #fff" class="mx-3 h3">@Model.nametag</div>
                     <div id="cart-area">
-                        <i class="fa fa-shopping-cart" style="color: #fff"></i>
+                        <a asp-area="" asp-page="/Cart"><i class="fa fa-shopping-cart h4" style="color: #fff"></i></a>
                         <span id="cart-counter" style="color: #fff">0</span>
                     </div>
                 </div>            
@@ -55,6 +57,7 @@
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/layout.js"></script>

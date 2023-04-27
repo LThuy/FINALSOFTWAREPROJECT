@@ -1,233 +1,44 @@
 ﻿@page
 @model AgentsWF.Pages.IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Login";
 }
 
-<link rel="stylesheet" href="/css/Homepage.css" />
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-<div class="text-center">
-    <div class="container new-products bg-dark p-3">
-        <h1 class="text-center text-info mt-5">New Products</h1>
-        <div id="demo" class="carousel slide" data-ride="carousel">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-                <li data-target="#demo" data-slide-to="3"></li>
-                <li data-target="#demo" data-slide-to="4"></li>
-            </ul>
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="~/css/images/1.jpeg " alt="" width="800" height="300" class="rounded">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/css/images/2.jpg" alt="" width="800" height="300" class="rounded">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/css/images/s22-ultra.jpg" alt="" width="800" height="300" class="rounded">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/css/images/4.jpg" alt="" width="800" height="300" class="rounded">
-                </div>
-                <div class="carousel-item">
-                    <img src="~/css/images/5.jpg" alt="" width="800" height="300" class="rounded">
-                </div>
-            </div>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="container our-products bg-light p-3 mt-5 mb-5">
-        <h1 class="text-center mt-5">Our Products</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-        @foreach (var phone in Model.phones)
-        {           
-              <div class="col">
-                    <div class="card h-70">
-                        <img src="@phone.Image" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title" id="phone_name">@phone.Name</h5>
-                            <p class="card-text">
-                                <label class="text-danger font-weight-bold text-uppercase h5" id="phone_price">@phone.Price USD</label>
-                                <div class="row r1">
-                                    <div class="col-sm-2 font-weight-bold">
-                                        <label>Memory: </label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="phone_memory">@phone.Memory</p>
-                                    </div>
-                                    <div class="col-sm-4 text-success">
-                                        <p> GB</p>
-                                    </div>
-                                </div>
-                                <div class="row r2">
-                                    <div class="col-sm-2 font-weight-bold">
-                                        <label>Camera: </label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="phone_camera">@phone.Camera</p>
-                                    </div>
-                                    <div class="col-sm-4 font-weight-bold text-success">
-                                        <p> pixels</p>
-                                    </div>
-                                </div>
-                                <div class="row r3">
-                                    <div class="col-sm-2 font-weight-bold">
-                                        <label>PIN:</label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <p id="phone_pin">@phone.Pin</p>
-                                    </div>
-                                    <div class="col-sm-4 font-weight-bold text-success">
-                                        <p> mAh</p>
-                                    </div>
-                                </div>                             
-                            </p>
-                            <div class="Quantity-product">
-                                <input type="number" name="number" min="0" max="10" value="0" id="quantity"/>
-                            </div>
-                            <button class="btn btn-primary mt-3" onclick="addToCart(this)">ADD TO CART</button>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header h4 bg-primary">Login</div>
+                <div class="card-body bg-light">
+                    <form name="loginForm" id="loginForm" method="post">
+                        <div class="form-group">
+                            <label for="email">Username</label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter username" name="Username">
                         </div>
-                    </div>
-                </div>            
-        }
-        </div>
-    </div>
-    <div class="container our-products bg-light p-3 mt-5 mb-5">
-        <h1 class="text-center mt-5">Best selling</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
-            <div class="col">
-                <div class="card h-70">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Description of product 1.
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                        </p>
-                        <div class="">
-                            <input type="number" name="number" min="0" max="10" value="0" />
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" name="Password">
                         </div>
-                        <a href="#" class="btn btn-primary mt-3">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-70">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Description of product 2.
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                        </p>
-                        <div class="">
-                            <input type="number" name="number" min="0" max="10" value="0" />
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
                         </div>
-                        <a href="#" class="btn btn-primary mt-3">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-70">
-                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Description of product 3.
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-2">
-                                    <label>Type</label>
-                                </div>
-                                <div class="col-sm-10">
-                                    <p>iphone</p>
-                                </div>
-                            </div>
-                        </p>
-                        <div class="">
-                            <input type="number" name="number" min="0" max="10" value="0" />
-                        </div>
-                        <a href="#" class="btn btn-primary mt-3">Buy Now</a>
-                    </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <div class="space"></div>
 </div>
-<script src="~/js/layout.js"></script>
+
 
 
 

@@ -35,11 +35,22 @@ GO
 
 INSERT INTO AgentsLogin (AgentID, Username, Password)
 VALUES
-(1, 'TB Mobiles', 'TB1234'),
+(1, 'admin', '123456'),
 (2, 'D7 Phones', 'D71234'),
 (3, '10 Wireless', '10W1234');
+GO
 
+--Select * from AgentsLogin
 
+CREATE TABLE Carts (
+    id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    image VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);
+
+Select * from Carts
 -- Create the Accountants table
 CREATE TABLE Accountants (
     AccountantID INT PRIMARY KEY,

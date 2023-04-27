@@ -1,343 +1,343 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AgentsWF.bundle.scp.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\AgentsWF.bundle.scp.css",
       "PackagePath": "staticwebassets\\AgentsWF.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\Homepage.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\Homepage.css",
       "PackagePath": "staticwebassets\\css\\Homepage.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\Layout.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\Layout.css",
       "PackagePath": "staticwebassets\\css\\Layout.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\121447151_padded_logo.png",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\121447151_padded_logo.png",
       "PackagePath": "staticwebassets\\css\\brand\\121447151_padded_logo.png"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\Color logo - no background.png",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\Color logo - no background.png",
       "PackagePath": "staticwebassets\\css\\brand\\Color logo - no background.png"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\White logo - no background.png",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\brand\\White logo - no background.png",
       "PackagePath": "staticwebassets\\css\\brand\\White logo - no background.png"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\1.jpeg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\1.jpeg",
       "PackagePath": "staticwebassets\\css\\images\\1.jpeg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\2.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\2.jpg",
       "PackagePath": "staticwebassets\\css\\images\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\4.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\4.jpg",
       "PackagePath": "staticwebassets\\css\\images\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\5.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\5.jpg",
       "PackagePath": "staticwebassets\\css\\images\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\HomepageBG.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\HomepageBG.jpg",
       "PackagePath": "staticwebassets\\css\\images\\HomepageBG.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\iphone-14-pro-vang-thumb-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\iphone-14-pro-vang-thumb-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\iphone-14-pro-vang-thumb-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\(600x600)_crop_iphone-12-pro-max-128gb-cu.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\600_600_Untitled_1.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\600_600_Untitled_1.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\600_600_Untitled_1.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\Motorola-Moto-G-Power-2021.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\Motorola-Moto-G-Power-2021.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\Motorola-Moto-G-Power-2021.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\asus-rog-phone-5g-thumb-600x600-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\asus-rog-phone-5g-thumb-600x600-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\asus-rog-phone-5g-thumb-600x600-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\google-pixel-5-600jpg-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\google-pixel-5-600jpg-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\google-pixel-5-600jpg-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\nokia-83-600x600-2-200x200.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\nokia-83-600x600-2-200x200.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\nokia-83-600x600-2-200x200.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\oneplus-9-pro-600x600-1-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\oneplus-9-pro-600x600-1-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\oneplus-9-pro-600x600-1-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\realme-gt-5g-600x600-1-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\realme-gt-5g-600x600-1-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\realme-gt-5g-600x600-1-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\samsung-galaxy-s21-tim-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\samsung-galaxy-s21-tim-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\samsung-galaxy-s21-tim-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\sony-xperia-1-iii-1-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\sony-xperia-1-iii-1-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\sony-xperia-1-iii-1-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\xiaomi-mi-11-ultra-600x600-2-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\xiaomi-mi-11-ultra-600x600-2-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\xiaomi-mi-11-ultra-600x600-2-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\zte-axon-30-ultra-600x600.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\products\\zte-axon-30-ultra-600x600.jpg",
       "PackagePath": "staticwebassets\\css\\images\\products\\zte-axon-30-ultra-600x600.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\s22-ultra.jpg",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\images\\s22-ultra.jpg",
       "PackagePath": "staticwebassets\\css\\images\\s22-ultra.jpg"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\ACER\\Desktop\\New folder\\code\\SE\\FINAL\\Net Core\\ASP.NET core\\AgentsWebform\\AgentsWF\\AgentsWF\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

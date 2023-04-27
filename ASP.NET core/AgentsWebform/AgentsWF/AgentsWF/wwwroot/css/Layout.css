@@ -46,11 +46,11 @@ header {
 }
 
     .container .head-title .navbar-nav li a {
-        color: #a700ff;
+        color: #dd01ff;
     }
 
 .container .head-title .navbar-nav li a:hover {
-        color: #6d1ae4;
+        color: #b300cf;
     }
 
 .container .head-title .navbar-nav li:hover::after {

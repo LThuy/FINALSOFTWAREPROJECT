@@ -6,11 +6,14 @@ using static System.Reflection.Metadata.BlobBuilder;
 
 namespace AgentsWF.Pages
 {
+
     public class IndexModel : PageModel
     {
         readonly IConfiguration _configuration;
 
-        public List<Phone> phones = new List<Phone>();
+        public Account accdb = new Account();
+
+        public string nametag = "";
 
         public string connectionString;
 
@@ -21,20 +24,30 @@ namespace AgentsWF.Pages
 
         public void OnGet()
         {
-            phones = GetPhoneList();
+            nametag = Request.Query["Username"];
         }
 
-        private List<Phone> GetPhoneList()
+        public void OnPost()
         {
+            Account acc = new Account();
+
+            acc.Username = Request.Form["Username"];
+            acc.Password = Request.Form["Password"];
+
             connectionString = _configuration.GetConnectionString("ConnectionString");
 
-            List<Phone> phoneList = new List<Phone>();
+            acc.checkAccount(connectionString, acc);
+            if (acc.checkAccount(connectionString, acc))
+            {
+                Response.Redirect("./Homepage?username=" + acc.Username);
+            }
+            else
+            {
+                Response.Redirect("./Index");
+            }
 
-            Phone phone = new Phone();
-
-            phoneList = phone.GetPhones(connectionString);
-
-            return phoneList;
         }
+
+
     }
 }

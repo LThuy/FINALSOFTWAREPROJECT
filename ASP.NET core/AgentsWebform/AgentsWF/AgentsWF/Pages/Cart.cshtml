@@ -1,0 +1,36 @@
+﻿@page
+@model AgentsWF.Pages.CartModel
+@{
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var cart in Model.carts)
+            {
+            <tr>
+                <td><img src="@cart.Image" alt="Product Image" style="max-width: 100px;"></td>
+                <td>@cart.Name</td>
+                <td><input type="number" value="@cart.Quantity" min="1"></td>
+                <td>$@cart.Price.00</td>
+                <td><button type="button" class="btn btn-danger">Remove</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"></td>
+            <td>Total Price:</td>
+            <td>$300.00</td>
+        </tr>
+    </tfoot>
+</table>
+

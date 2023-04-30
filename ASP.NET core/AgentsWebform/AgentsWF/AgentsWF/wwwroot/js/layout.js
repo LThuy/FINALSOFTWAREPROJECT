@@ -14,64 +14,22 @@ function addToCart(event) {
     var memory = $(btn).siblings('.card-text').siblings('#r1').find('#mem').find('#phone_memory').text();
     var camera = $(btn).siblings('.card-text').siblings('#r2').find('#cam').find('#phone_camera').text();
     var pin = $(btn).siblings('.card-text').siblings('#r3').find('#pin').find('#phone_pin').text();
-    if (quantity == '0' && btn.innerHTML == "ADD TO CART") {
+    if (quantity == '0') {
         alert("Please select a number");
     } else {
-        if (btn.innerHTML != "ADDED TO CART") {
-            var data = {
-                image: image,
-                name: name,
-                quantity: quantity,
-                price: price
-            };
-            $.ajax({
-                url: "/AddToCart",
-                type: "POST",
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                data: JSON.stringify(data),
-                processData: false,
-                success: function (result) {
-                    console.log(result);
-                },
-                error: function (xhr, status, error) {
-                    console.log(xhr.responseText);
-                }
-            });
-            btn.classList.remove("btn-primary");
-            btn.classList.add("btn-danger");
-            btn.style.color = "white";
-            btn.innerHTML = "ADDED TO CART";
-            console.log(image);
-            console.log(name);
-            console.log(price);
-            console.log(memory);
-            console.log(camera);
-            console.log(pin);
-            console.log(quantity);
-            // Add animation effect to cart icon
-            $('#cart-area i').addClass('animated shake');
-            // Update cart counter
-            var count = parseInt($('#cart-counter').text());
-            $('#cart-counter').text(count + 1);
-            // Remove animation effect after a delay
-            setTimeout(function () {
-                $('#cart-area i').addClass('animated shake');
-            }, 100);
-        } else {
-            btn.classList.remove("btn-danger");
-            btn.classList.add("btn-primary");
-            btn.style.color = "white";
-            btn.innerHTML = "ADD TO CART";
-            // Add animation effect to cart icon
-            $('#cart-area i').addClass('animated shake');
-            // Update cart counter
-            var count = parseInt($('#cart-counter').text());
-            $('#cart-counter').text(count - 1);
-            // Remove animation effect after a delay
-            setTimeout(function () {
-                $('#cart-area i').addClass('animated shake');
-            }, 100);
-        }
+      
+         window.location.href = "/Cart?image=" + image + "&name=" + name + "&price=" + price + "&quantity=" + quantity;
     }
 }
+
+let totalPrice = 0;
+const rows = document.querySelectorAll('table tbody tr');
+rows.forEach(row => {
+    const priceCell = row.querySelector('td:nth-child(4)');
+    const price = parseFloat(priceCell.innerText.replace('$', ''));
+    const quantityInput = row.querySelector('input[type="number"]');
+    const quantity = parseInt(quantityInput.value);
+    totalPrice += price * quantity;
+});
+const totalPriceCell = document.querySelector('table tfoot td:last-child');
+totalPriceCell.innerText = '$' + totalPrice.toFixed(2);

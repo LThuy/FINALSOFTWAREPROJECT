@@ -1,6 +1,7 @@
 ﻿@page
 @model AgentsWF.Pages.CartModel
 @{
+     ViewData["Title"] = "Cart";
 }
 
 <table class="table table-striped">
@@ -21,16 +22,19 @@
                 <td>@cart.Name</td>
                 <td><input type="number" value="@cart.Quantity" min="1"></td>
                 <td>$@cart.Price.00</td>
-                <td><button type="button" class="btn btn-danger">Remove</button></td>
-            </tr>
+                <td><a type="button" class="btn btn-danger" href="./DeleteCart?name=@cart.Name">Remove</a></td>
+        </tr>
         }
     </tbody>
     <tfoot>
         <tr>
             <td colspan="3"></td>
             <td>Total Price:</td>
-            <td>$300.00</td>
-        </tr>
+            <td>$0.00</td>            
+        </tr>  
+        
     </tfoot>
+   
 </table>
+<button type="button" class="btn btn-success">Purchase</button>
 

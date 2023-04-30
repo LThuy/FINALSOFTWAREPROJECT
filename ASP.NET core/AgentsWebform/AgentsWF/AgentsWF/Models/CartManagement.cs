@@ -40,50 +40,34 @@ namespace AgentsWF.Models
                     cart.Name = dr["name"].ToString();
                     cart.Quantity = Convert.ToInt32(dr["quantity"]);
                     cart.Price = Convert.ToInt32(dr["price"]);
-
                     cartList.Add(cart);
                 }
 
             }
+            con.Close();
 
             return cartList;
         }
 
 
-        public void ManageCart(string connectionString, string image, string name, string quantity, string price)
+        public void ManageCart(string connectionString, string image, string name, int quantity, int price)
         {
             SqlConnection con = new SqlConnection(connectionString);
-
-            string selectSQL = "SELECT name FROM Carts WHERE name = '" + name + "'";
-
+            string selectSQL = "INSERT INTO Carts VALUES ('" + image + "', '" + name + "', " + quantity + ", " + price + ")";
             con.Open();
-
             SqlCommand cmd = new SqlCommand(selectSQL, con);
+            SqlDataReader dr = cmd.ExecuteReader();       
+            con.Close();         
+        }
 
+        public void DeleteCart(string connectionString,  string name)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+            string selectSQL = "DELETE FROM Carts WHERE name= '" + name + "'";
+            con.Open();
+            SqlCommand cmd = new SqlCommand(selectSQL, con);
             SqlDataReader dr = cmd.ExecuteReader();
-
-            if (dr != null)
-            {
-                selectSQL = "DELETE FROM Carts WHERE name = '" + name + "'";
-
-                con.Open();
-
-                cmd = new SqlCommand(selectSQL, con);
-
-                dr = cmd.ExecuteReader();
-
-            } else
-            {
-                selectSQL = "INSERT INTO Carts Values VALUES ('" + image + "', '" + name + "', " + quantity + ", " + price + ")";
-
-                con.Open();
-
-                cmd = new SqlCommand(selectSQL, con);
-
-                dr = cmd.ExecuteReader();
-            }
-
-           
+            con.Close();
         }
     }
 }

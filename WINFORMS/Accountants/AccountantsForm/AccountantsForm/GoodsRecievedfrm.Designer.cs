@@ -61,6 +61,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtDocument = new System.Windows.Forms.TextBox();
             this.BtnNewNote = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(22, 80);
+            this.label1.Location = new System.Drawing.Point(22, 113);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 16);
             this.label1.TabIndex = 0;
@@ -79,7 +81,7 @@
             // txtNameDeliverer
             // 
             this.txtNameDeliverer.BackColor = System.Drawing.Color.Bisque;
-            this.txtNameDeliverer.Location = new System.Drawing.Point(132, 76);
+            this.txtNameDeliverer.Location = new System.Drawing.Point(132, 109);
             this.txtNameDeliverer.Name = "txtNameDeliverer";
             this.txtNameDeliverer.Size = new System.Drawing.Size(100, 20);
             this.txtNameDeliverer.TabIndex = 1;
@@ -89,7 +91,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(23, 128);
+            this.label2.Location = new System.Drawing.Point(23, 161);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 0;
@@ -98,7 +100,7 @@
             // txtLocation
             // 
             this.txtLocation.BackColor = System.Drawing.Color.Bisque;
-            this.txtLocation.Location = new System.Drawing.Point(132, 124);
+            this.txtLocation.Location = new System.Drawing.Point(132, 157);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Size = new System.Drawing.Size(100, 20);
             this.txtLocation.TabIndex = 1;
@@ -108,7 +110,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(23, 175);
+            this.label3.Location = new System.Drawing.Point(23, 202);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 16);
             this.label3.TabIndex = 0;
@@ -117,7 +119,7 @@
             // txtStock
             // 
             this.txtStock.BackColor = System.Drawing.Color.Bisque;
-            this.txtStock.Location = new System.Drawing.Point(132, 171);
+            this.txtStock.Location = new System.Drawing.Point(132, 198);
             this.txtStock.Name = "txtStock";
             this.txtStock.Size = new System.Drawing.Size(100, 20);
             this.txtStock.TabIndex = 1;
@@ -407,6 +409,25 @@
             this.BtnNewNote.UseVisualStyleBackColor = false;
             this.BtnNewNote.Click += new System.EventHandler(this.BtnNewNote_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Blue;
+            this.label9.Location = new System.Drawing.Point(23, 68);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(29, 16);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "No:";
+            // 
+            // txtNo
+            // 
+            this.txtNo.BackColor = System.Drawing.Color.Bisque;
+            this.txtNo.Location = new System.Drawing.Point(132, 64);
+            this.txtNo.Name = "txtNo";
+            this.txtNo.Size = new System.Drawing.Size(100, 20);
+            this.txtNo.TabIndex = 1;
+            // 
             // GoodsRecievedfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -420,7 +441,9 @@
             this.Controls.Add(this.btnConfirm);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtLocation);
+            this.Controls.Add(this.txtNo);
             this.Controls.Add(this.txtStock);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtNameDeliverer);
@@ -472,5 +495,7 @@
         private System.Windows.Forms.Button BtnNewNote;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDocument;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtNo;
     }
 }

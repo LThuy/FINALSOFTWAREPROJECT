@@ -24,6 +24,8 @@ INSERT INTO Agents (AgentID, AgentName, AgentAddress, AgentPhone) VALUES
 
 GO
 
+--Delete from Agents Where AgentID = 5
+
 CREATE TABLE AgentsLogin (
     AgentID INT NOT NULL,
     Username VARCHAR(50) NOT NULL UNIQUE,
@@ -115,7 +117,119 @@ VALUES
 
 GO
 
-DELETE FROM Products;
+--DELETE FROM Products;
 
-SELECT * FROM Products
+--SELECT * FROM Products
 
+CREATE TABLE incoming_stock (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(100),
+    quantity INT,
+    price DECIMAL(12, 0),
+    total_price DECIMAL(12, 0),
+    date DATE
+);
+
+GO
+INSERT INTO incoming_stock (name, quantity, price, total_price, date) 
+VALUES 
+('asus',30,15000000,450000000,'2023-01-01'),
+ ('apple', 50, 20000000, 1000000000, '2023-3-01'),
+       ('samsung', 40, 18000000, 720000000, '2023-02-02'),
+       ('huawei', 35, 17000000, 595000000, '2023-04-03'),
+       ('lenovo', 25, 12000000, 300000000, '2023-02-04'),
+       ('nokia', 20, 15000000, 300000000, '2023-01-05'),
+       ('lg', 30, 13000000, 390000000, '2023-04-06');
+
+
+--select * from incoming_stock
+
+--drop table incoming_stock
+GO
+
+CREATE TABLE outgoing_stock (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(100),
+    quantity INT,
+    price DECIMAL(12, 0),
+    total_price DECIMAL(12, 0),
+	 date DATE
+);
+
+GO
+
+--drop table outgoing_stock
+
+INSERT INTO outgoing_stock (name, quantity, price, total_price, date) 
+VALUES 
+('asus',30,15000000,450000000,'2023-01-01'),
+ ('apple', 50, 20000000, 1000000000, '2023-3-01'),
+       ('samsung', 40, 18000000, 720000000, '2023-02-02'),
+       ('huawei', 35, 17000000, 595000000, '2023-04-03'),
+       ('lenovo', 25, 12000000, 300000000, '2023-02-04'),
+       ('nokia', 20, 15000000, 300000000, '2023-01-05'),
+       ('lg', 30, 13000000, 390000000, '2023-04-06');
+
+--select * from outgoing_stock
+GO
+
+
+CREATE TABLE orders (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name_agent VARCHAR(100),
+    date DATE,
+    status VARCHAR(20),
+	total DECIMAL(12, 0)
+);
+GO
+
+
+
+
+CREATE TABLE orders_details (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    order_id INT,
+    name_product VARCHAR(100),
+    quantity INT,
+    price DECIMAL(12, 0),
+    total_price DECIMAL(12, 0),
+    FOREIGN KEY (order_id) REFERENCES orders(id)
+);
+GO
+
+--drop table orders
+
+-- Insert 10 orders into the "orders" table
+INSERT INTO orders (name_agent, date, status, total) VALUES 
+    ('Agent 1', '2023-05-01', 'Pending', 500000),
+    ('Agent 2', '2023-05-02', 'Shipped', 750000),
+    ('Agent 3', '2023-05-03', 'Delivered', 1000000),
+    ('Agent 4', '2023-05-04', 'Cancelled', 250000),
+    ('Agent 5', '2023-05-05', 'Pending', 500000),
+    ('Agent 6', '2023-05-06', 'Shipped', 750000),
+    ('Agent 7', '2023-05-07', 'Delivered', 1000000),
+    ('Agent 8', '2023-05-08', 'Cancelled', 250000);
+
+	GO
+
+INSERT INTO orders_details (order_id, name_product, quantity, price, total_price) VALUES
+ (1, 'Product A', 2, 100000, 200000),
+    (1, 'Product B', 3, 75000, 225000),
+	  (2, 'Product D', 4, 125000, 500000),
+    (2, 'Product E', 2, 150000, 300000),
+	 (3, 'Product G', 5, 100000, 500000),
+    (3, 'Product H', 2, 75000, 150000),
+    (3, 'Product I', 3, 50000, 150000),
+	(4, 'Product K', 3, 100000, 300000),
+    (4, 'Product L', 1, 150000, 150000),
+	   (5, 'Product N', 4, 125000, 500000),
+    (5, 'Product O', 1, 200000, 200000),
+	  (6, 'Product Q', 2, 100000, 200000),
+    (6, 'Product R', 4, 75000, 300000),
+    (6, 'Product S', 1, 200000, 200000),
+	  (7, 'Product U', 3, 100000, 300000),
+    (7, 'Product V', 2, 150000, 300000),
+	 (8, 'Product X', 1, 250000, 250000),
+    (8, 'Product Y', 4, 100000, 400000);
+
+	GO

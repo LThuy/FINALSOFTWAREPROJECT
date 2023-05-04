@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace AccountantsForm
 {
@@ -115,9 +116,11 @@ namespace AccountantsForm
                 CrystalDecisions.CrystalReports.Engine.TextObject textDelivererName = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtDelivererName"];
                 CrystalDecisions.CrystalReports.Engine.TextObject textLocation = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtLocation"];
                 CrystalDecisions.CrystalReports.Engine.TextObject textStock = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtStock"];
+                CrystalDecisions.CrystalReports.Engine.TextObject textNum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtNum"];
                 textDelivererName.Text = txtNameDeliverer.Text;
                 textLocation.Text = txtLocation.Text;
                 textStock.Text = txtStock.Text;
+                textNum.Text = txtNo.Text;
 
 
                 DataSet ds = new DataSet();
@@ -143,10 +146,23 @@ namespace AccountantsForm
                     {
                         dt.Rows.Add(dgv.Cells[0].Value, dgv.Cells[1].Value, dgv.Cells[2].Value,  dgv.Cells[3].Value, list[i], dgv.Cells[4].Value, dgv.Cells[5].Value, dgv.Cells[6].Value);
                         sum += Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", ""));
+                        SqlConnection conn = new SqlConnection(Program.strConn);
+                        conn.Open();
+                        DateTime currentDateTime = DateTime.Now;
+                        string formattedDate = currentDateTime.ToString("yyyy-MM-dd"); // Format the date as a string in the format "yyyy-MM-dd"
+                        String sSQL = "INSERT INTO incoming_stock (name, quantity, price, total_price, date) VALUES ('" + dgv.Cells[1].Value + "', " + dgv.Cells[4].Value + ", " +Convert.ToInt32(dgv.Cells[5].Value.ToString().Replace(",", "")) + ", " + Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", "")) + ", '" + formattedDate + "')";
+                        SqlCommand cmd = new SqlCommand(sSQL, conn);
+                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                        // Execute the SQL query
+                        cmd.ExecuteNonQuery();
+                        conn.Close();
                         i++;
                     }
                    
+
                 }
+
+              
 
                 CrystalDecisions.CrystalReports.Engine.TextObject textSum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtSum"];
                 textSum.Text = sum.ToString("N0");

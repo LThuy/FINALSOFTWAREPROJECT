@@ -38,5 +38,35 @@ namespace AccountantsForm
             f.ShowDialog();
             this.Close();
         }
+
+        private void incomingoutgoingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IncomingStockfrm f = new IncomingStockfrm();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           Ordersfrm f = new Ordersfrm();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void accountManagementToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           AgentAccounts f = new AgentAccounts();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void reportMonthlyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Revenuefrm f = new Revenuefrm();         
+            f.ShowDialog();
+        }
     }
 }

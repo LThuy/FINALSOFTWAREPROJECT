@@ -30,3 +30,8 @@ C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsF
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.goodsrecievedReport.resources
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.csproj.CopyComplete
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.GoodsExportfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.Ordersfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.IncomingStockfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.AgentAccounts.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.AgentsInformationfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.Revenuefrm.resources

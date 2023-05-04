@@ -39,16 +39,21 @@
             this.incomingoutgoingToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.revenueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportMonthlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accountManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productsToolStripMenuItem,
             this.goodsInformationToolStripMenuItem,
             this.stockReportToolStripMenuItem,
-            this.revenueToolStripMenuItem});
+            this.revenueToolStripMenuItem,
+            this.ordersToolStripMenuItem,
+            this.accountManagementToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -57,6 +62,7 @@
             // 
             // productsToolStripMenuItem
             // 
+            this.productsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestsellingProductsToolStripMenuItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
@@ -71,6 +77,7 @@
             // 
             // goodsInformationToolStripMenuItem
             // 
+            this.goodsInformationToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.goodsInformationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goodsReceivedToolStripMenuItem,
             this.goodsDeliveryToolStripMenuItem});
@@ -94,6 +101,7 @@
             // 
             // stockReportToolStripMenuItem
             // 
+            this.stockReportToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.stockReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.incomingoutgoingToolStripMenuItem,
             this.incomingoutgoingToolStripMenuItem1});
@@ -106,6 +114,7 @@
             this.incomingoutgoingToolStripMenuItem.Name = "incomingoutgoingToolStripMenuItem";
             this.incomingoutgoingToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
             this.incomingoutgoingToolStripMenuItem.Text = "Incoming";
+            this.incomingoutgoingToolStripMenuItem.Click += new System.EventHandler(this.incomingoutgoingToolStripMenuItem_Click);
             // 
             // incomingoutgoingToolStripMenuItem1
             // 
@@ -115,6 +124,7 @@
             // 
             // revenueToolStripMenuItem
             // 
+            this.revenueToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.revenueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportMonthlyToolStripMenuItem});
             this.revenueToolStripMenuItem.Name = "revenueToolStripMenuItem";
@@ -124,13 +134,31 @@
             // reportMonthlyToolStripMenuItem
             // 
             this.reportMonthlyToolStripMenuItem.Name = "reportMonthlyToolStripMenuItem";
-            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.reportMonthlyToolStripMenuItem.Text = "Report monthly";
+            this.reportMonthlyToolStripMenuItem.Click += new System.EventHandler(this.reportMonthlyToolStripMenuItem_Click);
+            // 
+            // ordersToolStripMenuItem
+            // 
+            this.ordersToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
+            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.ordersToolStripMenuItem.Text = "Orders";
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
+            // 
+            // accountManagementToolStripMenuItem
+            // 
+            this.accountManagementToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.accountManagementToolStripMenuItem.Name = "accountManagementToolStripMenuItem";
+            this.accountManagementToolStripMenuItem.Size = new System.Drawing.Size(138, 20);
+            this.accountManagementToolStripMenuItem.Text = "Account Management";
+            this.accountManagementToolStripMenuItem.Click += new System.EventHandler(this.accountManagementToolStripMenuItem_Click);
             // 
             // Mainfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.BackgroundImage = global::AccountantsForm.Properties.Resources.mainfrmBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -159,5 +187,7 @@
         private System.Windows.Forms.ToolStripMenuItem bestsellingProductsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem revenueToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportMonthlyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accountManagementToolStripMenuItem;
     }
 }

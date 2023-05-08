@@ -12,6 +12,7 @@ namespace AccountantsForm
 {
     public partial class Mainfrm : Form
     {
+        public string Username { get; set; }
         public Mainfrm()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace AccountantsForm
 
         private void Mainfrm_Load(object sender, EventArgs e)
         {
-
+            AccLoginfrm f = new AccLoginfrm();
+            labelName.Text = "Welcome " + Username;
         }
 
         private void goodsReceivedToolStripMenuItem_Click(object sender, EventArgs e)
@@ -42,17 +44,13 @@ namespace AccountantsForm
         private void incomingoutgoingToolStripMenuItem_Click(object sender, EventArgs e)
         {
             IncomingStockfrm f = new IncomingStockfrm();
-            this.Hide();
             f.ShowDialog();
-            this.Close();
         }
 
         private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
         {
            Ordersfrm f = new Ordersfrm();
-            this.Hide();
             f.ShowDialog();
-            this.Close();
         }
 
         private void accountManagementToolStripMenuItem_Click(object sender, EventArgs e)
@@ -67,6 +65,30 @@ namespace AccountantsForm
         {
             Revenuefrm f = new Revenuefrm();         
             f.ShowDialog();
+        }
+
+        private void incomingoutgoingToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OutgoingStockfrm f = new OutgoingStockfrm();
+            f.ShowDialog();
+        }
+
+        private void bestsellingProductsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BestSellingfrm f = new BestSellingfrm();
+            f.ShowDialog();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you sure to log out ?", "Confirming", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                AccLoginfrm f = new AccLoginfrm();
+                this.Hide();
+                f.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

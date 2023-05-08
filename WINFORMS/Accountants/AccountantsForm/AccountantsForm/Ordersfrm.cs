@@ -47,10 +47,24 @@ namespace AccountantsForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Mainfrm f = new Mainfrm();
-            this.Hide();
-            f.ShowDialog();
             this.Close();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(Program.strConn);
+            conn.Open();
+            String sSQL = "SELECT name_agent, date, status, total FROM orders WHERE id LIKE '%" + txtOrdersID.Text + "%'";
+            SqlCommand cmd = new SqlCommand(sSQL, conn);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+                comboBox1.Text = dt.Rows[0]["status"].ToString();
+                dataGridViewOrders.DataSource = dt;
+            }
+            conn.Close();
         }
     }
 }

@@ -13,6 +13,7 @@ namespace AccountantsForm
 {
     public partial class AccLoginfrm : Form
     {
+       
         public AccLoginfrm()
         {
             InitializeComponent();
@@ -30,6 +31,7 @@ namespace AccountantsForm
             if(dt.Rows.Count > 0)
             {
                 Mainfrm f = new Mainfrm();
+                f.Username = txtUsername.Text;
                 this.Hide();
                 f.ShowDialog();
                 this.Close();
@@ -38,6 +40,7 @@ namespace AccountantsForm
                 MessageBox.Show("Invalid username or password", "Alert", MessageBoxButtons.OK);
             }
         }
+
 
         private void btnClear_Click(object sender, EventArgs e)
         {

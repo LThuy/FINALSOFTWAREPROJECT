@@ -102,6 +102,7 @@ namespace AccountantsForm
             txtTrademark.Text = "";
             txtCode.Text = "";
             txtQuantity.Text = "";
+            txtDocument.Text = "";
             txtUnitPrice.Text = "";
         }
 
@@ -109,74 +110,77 @@ namespace AccountantsForm
         {
             if (txtNameDeliverer.Text != "" && txtLocation.Text != "" && txtStock.Text != "" && dataGridView1.SelectedRows.Count > 0)
             {
-                MessageBox.Show("Are you sure?", "Confirming", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                MessageBox.Show("Your goods recieved note will be printed", "Print", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
-                GoodsRecievedNote r = new GoodsRecievedNote();
+                DialogResult result =  MessageBox.Show("Are you sure?", "Confirming", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(result == DialogResult.Yes)
+                {
+                    MessageBox.Show("Your goods recieved note will be printed", "Print", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
+                    GoodsRecievedNote r = new GoodsRecievedNote();
 
-                CrystalDecisions.CrystalReports.Engine.TextObject textDelivererName = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtDelivererName"];
-                CrystalDecisions.CrystalReports.Engine.TextObject textLocation = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtLocation"];
-                CrystalDecisions.CrystalReports.Engine.TextObject textStock = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtStock"];
-                CrystalDecisions.CrystalReports.Engine.TextObject textNum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtNum"];
-                textDelivererName.Text = txtNameDeliverer.Text;
-                textLocation.Text = txtLocation.Text;
-                textStock.Text = txtStock.Text;
-                textNum.Text = txtNo.Text;
-
-
-                DataSet ds = new DataSet();
-                DataTable dt = new DataTable();
+                    CrystalDecisions.CrystalReports.Engine.TextObject textDelivererName = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtDelivererName"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject textLocation = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtLocation"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject textStock = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtStock"];
+                    CrystalDecisions.CrystalReports.Engine.TextObject textNum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtNum"];
+                    textDelivererName.Text = txtNameDeliverer.Text;
+                    textLocation.Text = txtLocation.Text;
+                    textStock.Text = txtStock.Text;
+                    textNum.Text = txtNo.Text;
 
 
+                    DataSet ds = new DataSet();
+                    DataTable dt = new DataTable();
 
-                dt.Columns.Add("Order", typeof(string));
-                dt.Columns.Add("Name of Trademark", typeof(string));
-                dt.Columns.Add("Unit", typeof(string));
-                dt.Columns.Add("Code", typeof(string));
-                dt.Columns.Add("Quantity (document)", typeof(string));
-                dt.Columns.Add("Quantity (actually)", typeof(string));
-                dt.Columns.Add("Unit Price", typeof(string));
-                dt.Columns.Add("Amount", typeof(string));
 
-                int sum = 0;
 
-                int i = 0;
-                foreach (DataGridViewRow dgv in dataGridView1.Rows)
-                {              
-                    if(dgv.Cells[6].Value != null)
+                    dt.Columns.Add("Order", typeof(string));
+                    dt.Columns.Add("Name of Trademark", typeof(string));
+                    dt.Columns.Add("Unit", typeof(string));
+                    dt.Columns.Add("Code", typeof(string));
+                    dt.Columns.Add("Quantity (document)", typeof(string));
+                    dt.Columns.Add("Quantity (actually)", typeof(string));
+                    dt.Columns.Add("Unit Price", typeof(string));
+                    dt.Columns.Add("Amount", typeof(string));
+                  
+
+                    int sum = 0;
+
+                    int i = 0;
+                    foreach (DataGridViewRow dgv in dataGridView1.Rows)
                     {
-                        dt.Rows.Add(dgv.Cells[0].Value, dgv.Cells[1].Value, dgv.Cells[2].Value,  dgv.Cells[3].Value, list[i], dgv.Cells[4].Value, dgv.Cells[5].Value, dgv.Cells[6].Value);
-                        sum += Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", ""));
-                        SqlConnection conn = new SqlConnection(Program.strConn);
-                        conn.Open();
-                        DateTime currentDateTime = DateTime.Now;
-                        string formattedDate = currentDateTime.ToString("yyyy-MM-dd"); // Format the date as a string in the format "yyyy-MM-dd"
-                        String sSQL = "INSERT INTO incoming_stock (name, quantity, price, total_price, date) VALUES ('" + dgv.Cells[1].Value + "', " + dgv.Cells[4].Value + ", " +Convert.ToInt32(dgv.Cells[5].Value.ToString().Replace(",", "")) + ", " + Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", "")) + ", '" + formattedDate + "')";
-                        SqlCommand cmd = new SqlCommand(sSQL, conn);
-                        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                        // Execute the SQL query
-                        cmd.ExecuteNonQuery();
-                        conn.Close();
-                        i++;
+                        if (dgv.Cells[6].Value != null)
+                        {
+                            dt.Rows.Add(dgv.Cells[0].Value, dgv.Cells[1].Value, dgv.Cells[2].Value, dgv.Cells[3].Value, list[i], dgv.Cells[4].Value, dgv.Cells[5].Value, dgv.Cells[6].Value);
+                            sum += Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", ""));
+                            SqlConnection conn = new SqlConnection(Program.strConn);
+                            conn.Open();
+                            DateTime currentDateTime = DateTime.Now;
+                            string formattedDate = currentDateTime.ToString("yyyy-MM-dd"); // Format the date as a string in the format "yyyy-MM-dd"
+                            String sSQL = "INSERT INTO incoming_stock (id, name, quantity, price, total_price, date) VALUES ('" + Convert.ToInt32(txtNo.Text) + "','" + dgv.Cells[1].Value + "', " + dgv.Cells[4].Value + ", " + Convert.ToInt32(dgv.Cells[5].Value.ToString().Replace(",", "")) + ", " + Convert.ToInt32(dgv.Cells[6].Value.ToString().Replace(",", "")) + ", '" + formattedDate + "')";
+                            SqlCommand cmd = new SqlCommand(sSQL, conn);
+                            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                            // Execute the SQL query
+                            cmd.ExecuteNonQuery();
+                            conn.Close();
+                            i++;
+                        }
+
+
                     }
-                   
 
+
+
+                    CrystalDecisions.CrystalReports.Engine.TextObject textSum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtSum"];
+                    textSum.Text = sum.ToString("N0");
+
+                    ds.Tables.Add(dt);
+                    ds.WriteXmlSchema("applicant.xml");
+
+
+                    goodsrecievedReport f = new goodsrecievedReport();
+                    r.SetDataSource(ds);
+                    f.crystalReportViewer1.ReportSource = r;                 
+                    f.ShowDialog();
                 }
-
-              
-
-                CrystalDecisions.CrystalReports.Engine.TextObject textSum = (CrystalDecisions.CrystalReports.Engine.TextObject)r.ReportDefinition.ReportObjects["txtSum"];
-                textSum.Text = sum.ToString("N0");
-
-
-                ds.Tables.Add(dt);
-                ds.WriteXmlSchema("applicant.xml");
-
-                goodsrecievedReport f = new goodsrecievedReport();        
-                r.SetDataSource(ds);
-                f.crystalReportViewer1.ReportSource = r;
-                this.Hide();
-                f.ShowDialog();
-                this.Close();
+                
             } else
             {
                 MessageBox.Show("Please fill information fully!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -192,8 +196,10 @@ namespace AccountantsForm
                 txtTrademark.Text = Convert.ToString(selectedRow.Cells[1].Value);
                 txtCode.Text = Convert.ToString(selectedRow.Cells[3].Value);
                 txtQuantity.Text = Convert.ToString(selectedRow.Cells[4].Value);
-                txtUnitPrice.Text = Convert.ToString(selectedRow.Cells[5].Value);
-                
+                decimal unitPrice = Convert.ToDecimal(selectedRow.Cells[5].Value);
+                string unitPriceStr = unitPrice.ToString("");
+                txtUnitPrice.Text = unitPriceStr;
+
             }
         }
 

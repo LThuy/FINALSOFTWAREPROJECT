@@ -46,13 +46,15 @@ GO
 
 CREATE TABLE Carts (
     id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	agent_name VARCHAR(255) NOT NULL,
     image VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
     quantity INT NOT NULL,
     price DECIMAL(10, 2) NOT NULL
 );
 
-Select * from Carts
+--Select * from Carts
+--drop table Carts
 -- Create the Accountants table
 CREATE TABLE Accountants (
     AccountantID INT PRIMARY KEY,
@@ -60,13 +62,15 @@ CREATE TABLE Accountants (
     Email VARCHAR(50),
     Phone VARCHAR(20)
 );
+GO
 
 -- Insert sample data into the Accountants table
 INSERT INTO Accountants (AccountantID, Name, Email, Phone)
 VALUES 
     (1, 'Le Thanh Huy', 'Huy@example.com', '0101234589'),
     (2, 'Tien Phat', 'Phat@example.com', '0908112321'),
-    (3, 'Vinh Thanh', 'Thanh@example.com', '0956773241');
+    (3, 'Vinh Thanh', 'Thanh@example.com', '0956773241'),
+	(4, 'admin', 'admin@example.com', '0123456789');
 
 GO
 
@@ -78,11 +82,15 @@ CREATE TABLE AccountantLogin (
 );
 Go
 
+
+--drop table Accountants
+
 INSERT INTO AccountantLogin (AccountantID, Username, Password)
 VALUES
 (1, 'Le Thanh Huy', 'password123'),
 (2, 'Tien Phat', 'phat1234'),
-(3, 'Vinh Thanh', 'abc123');
+(3, 'Vinh Thanh', 'abc123'),
+(4, 'admin', '123456');
 GO
 
 
@@ -122,7 +130,7 @@ GO
 --SELECT * FROM Products
 
 CREATE TABLE incoming_stock (
-    id INT IDENTITY(1,1) PRIMARY KEY,
+    id INT NOT NULL PRIMARY KEY,
     name VARCHAR(100),
     quantity INT,
     price DECIMAL(12, 0),
@@ -130,45 +138,59 @@ CREATE TABLE incoming_stock (
     date DATE
 );
 
+--drop table incoming_stock
+--SELECT * FROM incoming_stock
+
 GO
-INSERT INTO incoming_stock (name, quantity, price, total_price, date) 
+INSERT INTO incoming_stock (id, name, quantity, price, total_price, date) 
 VALUES 
-('asus',30,15000000,450000000,'2023-01-01'),
- ('apple', 50, 20000000, 1000000000, '2023-3-01'),
-       ('samsung', 40, 18000000, 720000000, '2023-02-02'),
-       ('huawei', 35, 17000000, 595000000, '2023-04-03'),
-       ('lenovo', 25, 12000000, 300000000, '2023-02-04'),
-       ('nokia', 20, 15000000, 300000000, '2023-01-05'),
-       ('lg', 30, 13000000, 390000000, '2023-04-06');
+(1234,'asus',30,15000000,450000000,'2023-01-01'),
+ (1223,'apple', 50, 20000000, 1000000000, '2023-3-01'),
+       (3214, 'samsung', 40, 18000000, 720000000, '2023-02-02'),
+       (2575, 'huawei', 35, 17000000, 595000000, '2023-04-03'),
+       (7689, 'lenovo', 25, 12000000, 300000000, '2023-02-04'),
+       (1236, 'nokia', 20, 15000000, 300000000, '2023-01-05'),
+       (7798, 'lg', 30, 13000000, 390000000, '2023-04-06'),
+	   (3489, 'oppo', 15, 16000000, 240000000, '2023-05-07'),
+(5432, 'xiaomi', 25, 14000000, 350000000, '2023-05-08'),
+(9876, 'oneplus', 10, 25000000, 250000000, '2023-04-09'),
+(7564, 'sony', 18, 22000000, 396000000, '2023-03-10'),
+(4433, 'htc', 12, 17000000, 204000000, '2023-02-11'),
+(9021, 'motorola', 8, 12000000, 96000000, '2023-01-12'),
+(5678, 'google', 22, 28000000, 616000000, '2023-02-13'),
+(3456, 'lenovo', 15, 12000000, 180000000, '2023-03-14');
 
 
---select * from incoming_stock
 
 --drop table incoming_stock
 GO
 
 CREATE TABLE outgoing_stock (
-  id INT IDENTITY(1,1) PRIMARY KEY,
-    name VARCHAR(100),
-    quantity INT,
-    price DECIMAL(12, 0),
-    total_price DECIMAL(12, 0),
-	 date DATE
+  id INT NOT NULL PRIMARY KEY,
+  name VARCHAR(100),
+  quantity INT,
+  price DECIMAL(12, 0),
+  total_price DECIMAL(12, 0),
+  date DATE,
+  FOREIGN KEY (id) REFERENCES incoming_stock(id)
 );
+
+--select * from outgoing_stock
+--drop table outgoing_stock
 
 GO
 
 --drop table outgoing_stock
 
-INSERT INTO outgoing_stock (name, quantity, price, total_price, date) 
+INSERT INTO outgoing_stock (id, name, quantity, price, total_price, date) 
 VALUES 
-('asus',30,15000000,450000000,'2023-01-01'),
- ('apple', 50, 20000000, 1000000000, '2023-3-01'),
-       ('samsung', 40, 18000000, 720000000, '2023-02-02'),
-       ('huawei', 35, 17000000, 595000000, '2023-04-03'),
-       ('lenovo', 25, 12000000, 300000000, '2023-02-04'),
-       ('nokia', 20, 15000000, 300000000, '2023-01-05'),
-       ('lg', 30, 13000000, 390000000, '2023-04-06');
+(1234,'asus',30,15000000,450000000,'2023-01-01'),
+ (1223, 'apple', 50, 20000000, 1000000000, '2023-3-01'),
+ (4433, 'htc', 12, 17000000, 204000000, '2023-02-11'),
+(9021, 'motorola', 8, 12000000, 96000000, '2023-01-12'),
+(5678, 'google', 22, 28000000, 616000000, '2023-02-13'),
+       (3214,'samsung', 40, 18000000, 720000000, '2023-02-02');
+
 
 --select * from outgoing_stock
 GO
@@ -201,14 +223,14 @@ GO
 
 -- Insert 10 orders into the "orders" table
 INSERT INTO orders (name_agent, date, status, total) VALUES 
-    ('Agent 1', '2023-05-01', 'Pending', 500000),
-    ('Agent 2', '2023-05-02', 'Shipped', 750000),
-    ('Agent 3', '2023-05-03', 'Delivered', 1000000),
-    ('Agent 4', '2023-05-04', 'Cancelled', 250000),
-    ('Agent 5', '2023-05-05', 'Pending', 500000),
-    ('Agent 6', '2023-05-06', 'Shipped', 750000),
-    ('Agent 7', '2023-05-07', 'Delivered', 1000000),
-    ('Agent 8', '2023-05-08', 'Cancelled', 250000);
+    ('D7 Phones', '2023-05-01', 'Pending', 425000),
+    ('D7 Phones', '2023-05-02', 'Shipped', 800000),
+    ('D7 Phones', '2023-05-03', 'Delivered', 800000),
+    ('Agent 4', '2023-05-04', 'Cancelled', 450000),
+    ('Agent 5', '2023-05-05', 'Pending', 700000),
+    ('Agent 6', '2023-05-06', 'Shipped', 700000),
+    ('D7 Phones', '2023-05-07', 'Delivered', 600000),
+    ('Agent 8', '2023-05-08', 'Cancelled', 650000);
 
 	GO
 
@@ -233,3 +255,8 @@ INSERT INTO orders_details (order_id, name_product, quantity, price, total_price
     (8, 'Product Y', 4, 100000, 400000);
 
 	GO
+
+
+	Select * from orders
+
+

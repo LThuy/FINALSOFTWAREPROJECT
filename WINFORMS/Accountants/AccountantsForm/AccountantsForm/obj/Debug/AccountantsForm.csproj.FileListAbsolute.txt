@@ -35,3 +35,5 @@ C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsF
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.AgentAccounts.resources
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.AgentsInformationfrm.resources
 C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.Revenuefrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.OutgoingStockfrm.resources
+C:\Users\ACER\Desktop\New folder\code\SE\FINAL\WINFORMS\Accountants\AccountantsForm\AccountantsForm\obj\Debug\AccountantsForm.BestSellingfrm.resources

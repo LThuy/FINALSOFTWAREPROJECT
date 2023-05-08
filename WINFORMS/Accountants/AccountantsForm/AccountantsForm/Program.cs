@@ -20,7 +20,7 @@ namespace AccountantsForm
             strConn = ConfigurationManager.ConnectionStrings["MyConn"].ConnectionString;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Mainfrm());
+            Application.Run(new AccLoginfrm());
         }
     }
 }

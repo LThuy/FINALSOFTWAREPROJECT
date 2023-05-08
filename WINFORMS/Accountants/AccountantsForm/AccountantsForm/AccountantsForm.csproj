@@ -71,6 +71,12 @@
     <Compile Include="AgentsInformationfrm.Designer.cs">
       <DependentUpon>AgentsInformationfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BestSellingfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BestSellingfrm.Designer.cs">
+      <DependentUpon>BestSellingfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="GoodsExportfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="Ordersfrm.Designer.cs">
       <DependentUpon>Ordersfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="OutgoingStockfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutgoingStockfrm.Designer.cs">
+      <DependentUpon>OutgoingStockfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Revenuefrm.cs">
@@ -129,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AgentsInformationfrm.resx">
       <DependentUpon>AgentsInformationfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BestSellingfrm.resx">
+      <DependentUpon>BestSellingfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GoodsExportfrm.resx">
       <DependentUpon>GoodsExportfrm.cs</DependentUpon>
@@ -151,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ordersfrm.resx">
       <DependentUpon>Ordersfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutgoingStockfrm.resx">
+      <DependentUpon>OutgoingStockfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

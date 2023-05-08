@@ -41,12 +41,14 @@
             this.reportMonthlyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountManagementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.labelName = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Highlight;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productsToolStripMenuItem,
             this.goodsInformationToolStripMenuItem,
@@ -62,7 +64,7 @@
             // 
             // productsToolStripMenuItem
             // 
-            this.productsToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.productsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.productsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bestsellingProductsToolStripMenuItem});
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
@@ -72,12 +74,13 @@
             // bestsellingProductsToolStripMenuItem
             // 
             this.bestsellingProductsToolStripMenuItem.Name = "bestsellingProductsToolStripMenuItem";
-            this.bestsellingProductsToolStripMenuItem.Size = new System.Drawing.Size(135, 22);
+            this.bestsellingProductsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bestsellingProductsToolStripMenuItem.Text = "Best-selling";
+            this.bestsellingProductsToolStripMenuItem.Click += new System.EventHandler(this.bestsellingProductsToolStripMenuItem_Click);
             // 
             // goodsInformationToolStripMenuItem
             // 
-            this.goodsInformationToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.goodsInformationToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.goodsInformationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.goodsReceivedToolStripMenuItem,
             this.goodsDeliveryToolStripMenuItem});
@@ -101,7 +104,7 @@
             // 
             // stockReportToolStripMenuItem
             // 
-            this.stockReportToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.stockReportToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.stockReportToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.incomingoutgoingToolStripMenuItem,
             this.incomingoutgoingToolStripMenuItem1});
@@ -121,10 +124,11 @@
             this.incomingoutgoingToolStripMenuItem1.Name = "incomingoutgoingToolStripMenuItem1";
             this.incomingoutgoingToolStripMenuItem1.Size = new System.Drawing.Size(125, 22);
             this.incomingoutgoingToolStripMenuItem1.Text = "Outgoing";
+            this.incomingoutgoingToolStripMenuItem1.Click += new System.EventHandler(this.incomingoutgoingToolStripMenuItem1_Click);
             // 
             // revenueToolStripMenuItem
             // 
-            this.revenueToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.revenueToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.revenueToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportMonthlyToolStripMenuItem});
             this.revenueToolStripMenuItem.Name = "revenueToolStripMenuItem";
@@ -134,13 +138,13 @@
             // reportMonthlyToolStripMenuItem
             // 
             this.reportMonthlyToolStripMenuItem.Name = "reportMonthlyToolStripMenuItem";
-            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reportMonthlyToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.reportMonthlyToolStripMenuItem.Text = "Report monthly";
             this.reportMonthlyToolStripMenuItem.Click += new System.EventHandler(this.reportMonthlyToolStripMenuItem_Click);
             // 
             // ordersToolStripMenuItem
             // 
-            this.ordersToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ordersToolStripMenuItem.BackColor = System.Drawing.Color.Lime;
             this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
             this.ordersToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.ordersToolStripMenuItem.Text = "Orders";
@@ -148,11 +152,37 @@
             // 
             // accountManagementToolStripMenuItem
             // 
-            this.accountManagementToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.accountManagementToolStripMenuItem.BackColor = System.Drawing.Color.Lime;
             this.accountManagementToolStripMenuItem.Name = "accountManagementToolStripMenuItem";
             this.accountManagementToolStripMenuItem.Size = new System.Drawing.Size(138, 20);
             this.accountManagementToolStripMenuItem.Text = "Account Management";
             this.accountManagementToolStripMenuItem.Click += new System.EventHandler(this.accountManagementToolStripMenuItem_Click);
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Red;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.btnLogout.Location = new System.Drawing.Point(713, 415);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(75, 23);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Log out";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // labelName
+            // 
+            this.labelName.AutoSize = true;
+            this.labelName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.labelName.Font = new System.Drawing.Font("Verdana", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelName.ForeColor = System.Drawing.Color.Maroon;
+            this.labelName.Location = new System.Drawing.Point(161, 169);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(504, 59);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "WELCOME ADMIN";
             // 
             // Mainfrm
             // 
@@ -162,7 +192,10 @@
             this.BackgroundImage = global::AccountantsForm.Properties.Resources.mainfrmBackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Mainfrm";
             this.Text = "Management";
@@ -189,5 +222,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportMonthlyToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem accountManagementToolStripMenuItem;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label labelName;
     }
 }

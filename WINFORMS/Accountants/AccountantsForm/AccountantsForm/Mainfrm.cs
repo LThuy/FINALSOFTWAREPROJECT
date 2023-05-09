@@ -28,17 +28,13 @@ namespace AccountantsForm
         {
 
             GoodsRecievedfrm f = new GoodsRecievedfrm();
-            this.Hide();
             f.ShowDialog();
-            this.Close();
         }
 
         private void goodsDeliveryToolStripMenuItem_Click(object sender, EventArgs e)
         {
             GoodsExportfrm f = new GoodsExportfrm();
-            this.Hide();
             f.ShowDialog();
-            this.Close();
         }
 
         private void incomingoutgoingToolStripMenuItem_Click(object sender, EventArgs e)
@@ -55,10 +51,8 @@ namespace AccountantsForm
 
         private void accountManagementToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           AgentAccounts f = new AgentAccounts();
-            this.Hide();
+           AgentAccounts f = new AgentAccounts();        
             f.ShowDialog();
-            this.Close();
         }
 
         private void reportMonthlyToolStripMenuItem_Click(object sender, EventArgs e)

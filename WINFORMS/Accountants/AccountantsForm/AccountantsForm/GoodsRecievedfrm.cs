@@ -40,7 +40,7 @@ namespace AccountantsForm
             {
                 if(validateProductInformation())
                 {
-                    dataGridView1.Rows.Add(dataGridView1.RowCount, txtTrademark.Text, "VND", txtCode.Text, txtQuantity.Text, Convert.ToInt32(txtUnitPrice.Text).ToString("N0"),
+                    dataGridView1.Rows.Add(dataGridView1.RowCount, txtTrademark.Text, "USD", txtCode.Text, txtQuantity.Text, Convert.ToInt32(txtUnitPrice.Text).ToString("N0"),
                     (Convert.ToInt32(txtQuantity.Text) * Convert.ToInt32(txtUnitPrice.Text)).ToString("N0"));
                     list.Add(txtDocument.Text);
                 }           
@@ -219,10 +219,7 @@ namespace AccountantsForm
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            Mainfrm f = new Mainfrm();
-            this.Hide();
-            f.ShowDialog();
+        {        
             this.Close();
         }
 

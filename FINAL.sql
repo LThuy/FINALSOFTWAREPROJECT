@@ -24,7 +24,7 @@ INSERT INTO Agents (AgentID, AgentName, AgentAddress, AgentPhone) VALUES
 
 GO
 
---Delete from Agents Where AgentID = 5
+
 
 CREATE TABLE AgentsLogin (
     AgentID INT NOT NULL,
@@ -42,7 +42,6 @@ VALUES
 (3, '10 Wireless', '10W1234');
 GO
 
---Select * from AgentsLogin
 
 CREATE TABLE Carts (
     id INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
@@ -52,10 +51,8 @@ CREATE TABLE Carts (
     quantity INT NOT NULL,
     price DECIMAL(10, 2) NOT NULL
 );
+GO
 
---Select * from Carts
---drop table Carts
--- Create the Accountants table
 CREATE TABLE Accountants (
     AccountantID INT PRIMARY KEY,
     Name VARCHAR(50),
@@ -81,6 +78,7 @@ CREATE TABLE AccountantLogin (
 	FOREIGN KEY (AccountantID) REFERENCES Accountants (AccountantID)
 );
 Go
+
 
 
 --drop table Accountants
@@ -125,12 +123,9 @@ VALUES
 
 GO
 
---DELETE FROM Products;
-
---SELECT * FROM Products
 
 CREATE TABLE incoming_stock (
-    id INT NOT NULL PRIMARY KEY,
+    id INT NOT NULL,
     name VARCHAR(100),
     quantity INT,
     price DECIMAL(12, 0),
@@ -138,10 +133,9 @@ CREATE TABLE incoming_stock (
     date DATE
 );
 
---drop table incoming_stock
---SELECT * FROM incoming_stock
-
 GO
+
+
 INSERT INTO incoming_stock (id, name, quantity, price, total_price, date) 
 VALUES 
 (1234,'asus',30,15000000,450000000,'2023-01-01'),
@@ -160,27 +154,20 @@ VALUES
 (5678, 'google', 22, 28000000, 616000000, '2023-02-13'),
 (3456, 'lenovo', 15, 12000000, 180000000, '2023-03-14');
 
-
-
---drop table incoming_stock
 GO
 
 CREATE TABLE outgoing_stock (
-  id INT NOT NULL PRIMARY KEY,
+  id INT NOT NULL,
   name VARCHAR(100),
   quantity INT,
   price DECIMAL(12, 0),
   total_price DECIMAL(12, 0),
   date DATE,
-  FOREIGN KEY (id) REFERENCES incoming_stock(id)
 );
 
---select * from outgoing_stock
---drop table outgoing_stock
 
 GO
 
---drop table outgoing_stock
 
 INSERT INTO outgoing_stock (id, name, quantity, price, total_price, date) 
 VALUES 
@@ -192,7 +179,6 @@ VALUES
        (3214,'samsung', 40, 18000000, 720000000, '2023-02-02');
 
 
---select * from outgoing_stock
 GO
 
 
@@ -257,6 +243,5 @@ INSERT INTO orders_details (order_id, name_product, quantity, price, total_price
 	GO
 
 
-	Select * from orders
 
 

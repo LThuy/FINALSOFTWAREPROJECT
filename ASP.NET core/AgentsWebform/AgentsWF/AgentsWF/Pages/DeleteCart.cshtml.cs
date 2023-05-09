@@ -21,15 +21,17 @@ namespace AgentsWF.Pages
 
         public void OnGet()
         {
+            nametag = Request.Query["Username"];
             Name = Request.Query["name"];
 
             connectionString = _configuration.GetConnectionString("ConnectionString");
 
             CartManagement c = new CartManagement();
-
+            OrdersDetails ODT = new OrdersDetails();
             c.DeleteCart(connectionString, Name);
+            ODT.DeleteOrdersDetails(connectionString, Name);
 
-            Response.Redirect("./Cart");
+            Response.Redirect("./Cart?Username=" + nametag);
         }
     }
 }

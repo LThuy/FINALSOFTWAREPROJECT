@@ -28,7 +28,7 @@
                     <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                         <ul class="navbar-nav flex-grow-1">
                             <li class="nav-item">
-                                <a class="nav-link" asp-area="" asp-page="/Homepage">Home</a>
+                                <a class="nav-link" href="/Homepage?Username=@Model.nametag">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" asp-area="" asp-page="/Privacy">Privacy</a>
@@ -36,8 +36,11 @@
                         </ul>
                     </div>
                     <div id="UsernameTag" style="color: #fff" class="mx-3 h3">@Model.nametag</div>
+                    <div id="History">
+                        <a href="/orderHistory?Username=@Model.nametag" style="text-decoration: none; color: #fff" class="mx-3">History orders</a>
+                    </div>
                     <div id="cart-area">
-                        <a asp-area="" asp-page="/Cart"><i class="fa fa-shopping-cart h4" style="color: #fff"></i></a>   
+                        <a href="/Cart?Username=@Model.nametag"><i class="fa fa-shopping-cart h4" style="color: #fff"></i></a>
                     </div>
                 </div>            
             </div>

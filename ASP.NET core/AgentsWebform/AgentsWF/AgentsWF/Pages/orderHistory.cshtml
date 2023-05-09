@@ -1,0 +1,36 @@
+﻿@page
+@model AgentsWF.Pages.orderHistoryModel
+@{
+    ViewData["Title"] = "Orders";
+}
+
+    <div>
+
+        <h1>Orders</h1>
+
+        Below you see all the Orders:<br />
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>OrderId</th>
+                    <th>Agent Name</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var order in Model.orders)
+            {
+                    <tr>
+                        <td> @order.OrdersID</td>
+                        <td>@order.AgentName</td>
+                            <td> @order.Date </td>
+                            <td> @order.Status </td>
+                            <td> @order.Total </td>                 
+                    </tr>
+            }
+            </tbody>
+        </table>
+    </div>

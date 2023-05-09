@@ -7,6 +7,7 @@ namespace AgentsWF.Models
 {
     public class CartManagement
     {
+        public string AgentName { get; set; }
         public string Image { get; set; }
         public string Name { get; set; }
 
@@ -16,14 +17,14 @@ namespace AgentsWF.Models
 
 
 
-        public List<CartManagement> GetCarts(string connectionString)
+        public List<CartManagement> GetCarts(string connectionString, string AgentName)
         {
 
             List<CartManagement> cartList = new List<CartManagement>();
 
             SqlConnection con = new SqlConnection(connectionString);
 
-            string selectSQL = "select image, name, quantity, price from Carts";
+            string selectSQL = "select image, name, quantity, price from Carts where agent_name = '"+AgentName+"'";
 
             con.Open();
 
@@ -50,10 +51,10 @@ namespace AgentsWF.Models
         }
 
 
-        public void ManageCart(string connectionString, string image, string name, int quantity, int price)
+        public void ManageCart(string connectionString,string AgentName, string image, string name, int quantity, int price)
         {
             SqlConnection con = new SqlConnection(connectionString);
-            string selectSQL = "INSERT INTO Carts VALUES ('" + image + "', '" + name + "', " + quantity + ", " + price + ")";
+            string selectSQL = "INSERT INTO Carts VALUES ('" + AgentName + "','" + image + "', '" + name + "', " + quantity + ", " + price + ")";
             con.Open();
             SqlCommand cmd = new SqlCommand(selectSQL, con);
             SqlDataReader dr = cmd.ExecuteReader();       

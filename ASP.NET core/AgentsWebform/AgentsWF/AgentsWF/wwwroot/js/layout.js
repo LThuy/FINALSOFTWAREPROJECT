@@ -2,7 +2,7 @@
 $("[type='number']").keypress(function (evt) {
     evt.preventDefault();
 });
-
+var username = document.getElementById("UsernameTag").textContent;
 function addToCart(event) {
     var btn = event;
     var $card = $(btn).closest('.card');
@@ -18,7 +18,7 @@ function addToCart(event) {
         alert("Please select a number");
     } else {
       
-         window.location.href = "/Cart?image=" + image + "&name=" + name + "&price=" + price + "&quantity=" + quantity;
+         window.location.href = "/Cart?Username=" + username + "&image=" + image + "&name=" + name + "&price=" + price + "&quantity=" + quantity;
     }
 }
 
@@ -33,3 +33,12 @@ rows.forEach(row => {
 });
 const totalPriceCell = document.querySelector('table tfoot td:last-child');
 totalPriceCell.innerText = '$' + totalPrice.toFixed(2);
+
+
+function addOrders() {
+    let currentDate = new Date();
+    let year = currentDate.getFullYear();
+    let month = ('0' + (currentDate.getMonth() + 1)).slice(-2);
+    let day = ('0' + currentDate.getDate()).slice(-2);
+    window.location.href = "/AddOrders?Username=" + username + "&date=" + year + '/' + month + '/' + day + "&total=" + totalPrice;
+}

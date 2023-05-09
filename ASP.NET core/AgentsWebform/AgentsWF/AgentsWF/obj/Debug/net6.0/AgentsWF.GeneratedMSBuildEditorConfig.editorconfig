@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ACER\Desktop\New folder\code\SE\FINAL\Net Core\ASP.NET core\AgentsWebform\AgentsWF\AgentsWF
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ACER/Desktop/New folder/code/SE/FINAL/Net Core/ASP.NET core/AgentsWebform/AgentsWF/AgentsWF/Pages/AddOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkT3JkZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ACER/Desktop/New folder/code/SE/FINAL/Net Core/ASP.NET core/AgentsWebform/AgentsWF/AgentsWF/Pages/AddToCart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVG9DYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ACER/Desktop/New folder/code/SE/FINAL/Net Core/ASP.NET core/AgentsWebform/AgentsWF/AgentsWF/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ACER/Desktop/New folder/code/SE/FINAL/Net Core/ASP.NET core/AgentsWebform/AgentsWF/AgentsWF/Pages/orderHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcb3JkZXJIaXN0b3J5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ACER/Desktop/New folder/code/SE/FINAL/Net Core/ASP.NET core/AgentsWebform/AgentsWF/AgentsWF/Pages/Privacy.cshtml]
